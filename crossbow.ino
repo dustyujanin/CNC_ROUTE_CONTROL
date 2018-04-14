@@ -292,6 +292,7 @@ int8_t getFrameToTransmit(QspConfiguration_t *qsp) {
 void loop(void)
 {
 	int t = 0;
+	int p = 1;
     uint32_t currentMillis = millis();
 	ttt++;
     /*
