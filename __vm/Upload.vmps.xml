@@ -1,0 +1,410 @@
+<VisualMicro>
+  <Program Name="crossbow" Ext=".ino" Location="E:\ЛОРА\QuadMeUp_Crossbow-master (3)\QuadMeUp_Crossbow-master\crossbow">
+    <Compile ReCompileIfSourceIsNewer="1" IsDebugStart="1" IsGdb="0" CompilerErrors="0" ConfigurationName="Debug" UseConfigurationNameInBuildFolder="True" StopOnError="False" OptimiseLibs="True" OptimiseCore="True" BuildPath="C:\Users\Администратор\AppData\Local\Temp\VMBuilds\crossbow\uno\Debug" SketchName="crossbow" ReportDigitalPins="0" ReportAnalogPins="0" ReportI2C="0" ReportFreeMemory="0" IncludeDebug="1" LastDebugPreProcessorDefinitions="VM_DEBUG;VM_DEBUG_ENABLE 1;VM_DEBUG_BANDWIDTH_THROTTLE_MS 33;VM_DEBUGGER_TYPE_HARDWARESERIAL 0;VM_DEBUGGER_TYPE_SOFTWARESERIAL 1;VM_DEBUGGER_TYPE_FASTSERIAL 2;VM_DEBUGGER_TYPE_USB 3;VM_DEBUGGER_TYPE_TEENSY 4;VM_DEBUGGER_TYPE_UART 5;VM_DEBUGGER_TYPE_USART 6;VM_DEBUGGER_TYPE_USBSERIAL 7;VM_DEBUGGER_TYPE_TTYUART 8;VM_DEBUGGER_TYPE_NET_CONSOLE 9;VM_DEBUGGER_TYPE_Uart 10;VM_DEBUGGER_TYPE_COSA 11;VM_DEBUGGER_TYPE_CDCSerialClass 12;VM_DEBUGGER_TYPE_HARDWARESERIAL1 13;VM_DEBUGGER_TYPE_HARDWARESERIAL2 14;VM_DEBUGGER_TYPE_HARDWARESERIAL3 15;VM_DEBUGGER_TYPE_NET_UDP 16;VM_DEBUGGER_TYPE_USBAPI 17;VM_DEBUGGER_TYPE_SERIALUSB 18;VM_DEBUGGER_TYPE VM_DEBUGGER_TYPE_HARDWARESERIAL;VM_DEBUG_BREAKPAUSE;" IncludesDebug="1" IsCompiled="1" />
+    <Platform Name="arduino16x" Package="arduino" Platform="avr" Architecture="avr">
+      <Board Name="uno" Description="Arduino/Genuino Uno" CoreFolder="C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino" VariantFullPath="C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\standard" McuIdePath="C:\Program Files (x86)\Arduino" McuSketchBookPath="C:\Users\Администратор\Documents\Arduino" name="Arduino/Genuino Uno" vid.0="0x2341" pid.0="0x0043" vid.1="0x2341" pid.1="0x0001" vid.2="0x2A03" pid.2="0x0043" vid.3="0x2341" pid.3="0x0243" upload.tool="avrdude" upload.protocol="arduino" upload.maximum_size="32256" upload.maximum_data_size="2048" upload.speed="115200" bootloader.tool="avrdude" bootloader.low_fuses="0xFF" bootloader.high_fuses="0xDE" bootloader.extended_fuses="0xFD" bootloader.unlock_bits="0x3F" bootloader.lock_bits="0x0F" bootloader.file="optiboot/optiboot_atmega328.hex" build.mcu="atmega328p" build.f_cpu="16000000L" build.board="AVR_UNO" build.core="arduino" build.variant="standard" runtime.ide.path="C:\Program Files (x86)\Arduino" runtime.os="windows" build.system.path="C:\Program Files (x86)\Arduino\hardware\arduino\avr\system" runtime.ide.version="10805" target_package="arduino" target_platform="avr" runtime.hardware.path="C:\Program Files (x86)\Arduino\hardware\arduino" originalid="uno" intellisense.tools.path="{runtime.tools.avr-gcc.path}\" intellisense.include.paths="{intellisense.tools.path}avr\include\;{intellisense.tools.path}avr\include\avr\;{intellisense.tools.path}lib\gcc\avr\4.8.1\include;{intellisense.tools.path}lib\gcc\avr\4.9.2\include;{intellisense.tools.path}lib\gcc\avr\4.9.3\include" tools.atprogram.cmd.path="%AVRSTUDIO_EXE_PATH%\atbackend\atprogram" tools.atprogram.cmd.setwinpath="true" tools.atprogram.program.params.verbose="-v" tools.atprogram.program.params.quiet="-q" tools.atprogram.program.pattern="&quot;{cmd.path}&quot; -d {build.mcu} {program.verbose} {program.extra_params} program -c -f &quot;{build.path}\{build.project_name}.hex&quot;" tools.atprogram.program.xpattern="&quot;{cmd.path}&quot; {AVRSTUDIO_BACKEND_CONNECTION} -d {build.mcu} {program.verbose} {program.extra_params} program -c -f &quot;{build.path}\{build.project_name}.hex&quot;" tools.atprogram.erase.params.verbose="-v" tools.atprogram.erase.params.quiet="-q" tools.atprogram.bootloader.params.verbose="-v" tools.atprogram.bootloader.params.quiet="-q" tools.atprogram.bootloader.pattern="&quot;{cmd.path}&quot; -d {build.mcu} {bootloader.verbose}  program -c -f &quot;{runtime.ide.path}\hardware\arduino\avr\bootloaders\{bootloader.file}&quot;" version="1.6.20" compiler.warning_flags="-w" compiler.warning_flags.none="-w" compiler.warning_flags.default="" compiler.warning_flags.more="-Wall" compiler.warning_flags.all="-Wall -Wextra" compiler.path="{runtime.tools.avr-gcc.path}/bin/" compiler.c.cmd="avr-gcc" compiler.c.flags="-c -g -Os {compiler.warning_flags} -std=gnu11 -ffunction-sections -fdata-sections -MMD -flto -fno-fat-lto-objects" compiler.c.elf.flags="{compiler.warning_flags} -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections" compiler.c.elf.cmd="avr-gcc" compiler.S.flags="-c -g -x assembler-with-cpp -flto -MMD" compiler.cpp.cmd="avr-g++" compiler.cpp.flags="-c -g -Os {compiler.warning_flags} -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto" compiler.ar.cmd="avr-gcc-ar" compiler.ar.flags="rcs" compiler.objcopy.cmd="avr-objcopy" compiler.objcopy.eep.flags="-O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0" compiler.elf2hex.flags="-O ihex -R .eeprom" compiler.elf2hex.cmd="avr-objcopy" compiler.ldflags="" compiler.size.cmd="avr-size" build.extra_flags="" compiler.c.extra_flags="" compiler.c.elf.extra_flags="" compiler.S.extra_flags="" compiler.cpp.extra_flags="" compiler.ar.extra_flags="" compiler.objcopy.eep.extra_flags="" compiler.elf2hex.extra_flags="" recipe.c.o.pattern="&quot;{compiler.path}{compiler.c.cmd}&quot; {compiler.c.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.c.extra_flags} {build.extra_flags} {includes} &quot;{source_file}&quot; -o &quot;{object_file}&quot;" recipe.cpp.o.pattern="&quot;{compiler.path}{compiler.cpp.cmd}&quot; {compiler.cpp.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} &quot;{source_file}&quot; -o &quot;{object_file}&quot;" recipe.S.o.pattern="&quot;{compiler.path}{compiler.c.cmd}&quot; {compiler.S.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.S.extra_flags} {build.extra_flags} {includes} &quot;{source_file}&quot; -o &quot;{object_file}&quot;" archive_file_path="{build.path}/{archive_file}" recipe.ar.pattern="&quot;{compiler.path}{compiler.ar.cmd}&quot; {compiler.ar.flags} {compiler.ar.extra_flags} &quot;{archive_file_path}&quot; &quot;{object_file}&quot;" recipe.c.combine.pattern="&quot;{compiler.path}{compiler.c.elf.cmd}&quot; {compiler.c.elf.flags} -mmcu={build.mcu} {compiler.c.elf.extra_flags} -o &quot;{build.path}/{build.project_name}.elf&quot; {object_files} &quot;{build.path}/{archive_file}&quot; &quot;-L{build.path}&quot; -lm" recipe.objcopy.eep.pattern="&quot;{compiler.path}{compiler.objcopy.cmd}&quot; {compiler.objcopy.eep.flags} {compiler.objcopy.eep.extra_flags} &quot;{build.path}/{build.project_name}.elf&quot; &quot;{build.path}/{build.project_name}.eep&quot;" recipe.objcopy.hex.pattern="&quot;{compiler.path}{compiler.elf2hex.cmd}&quot; {compiler.elf2hex.flags} {compiler.elf2hex.extra_flags} &quot;{build.path}/{build.project_name}.elf&quot; &quot;{build.path}/{build.project_name}.hex&quot;" recipe.output.tmp_file="{build.project_name}.hex" recipe.output.save_file="{build.project_name}.{build.variant}.hex" recipe.size.pattern="&quot;{compiler.path}{compiler.size.cmd}&quot; -A &quot;{build.path}/{build.project_name}.elf&quot;" recipe.size.regex="^(?:\.text|\.data|\.bootloader)\s+([0-9]+).*" recipe.size.regex.data="^(?:\.data|\.bss|\.noinit)\s+([0-9]+).*" recipe.size.regex.eeprom="^(?:\.eeprom)\s+([0-9]+).*" preproc.includes.flags="-w -x c++ -M -MG -MP" recipe.preproc.includes="&quot;{compiler.path}{compiler.cpp.cmd}&quot; {compiler.cpp.flags} {preproc.includes.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} &quot;{source_file}&quot;" preproc.macros.flags="-w -x c++ -E -CC" recipe.preproc.macros="&quot;{compiler.path}{compiler.cpp.cmd}&quot; {compiler.cpp.flags} {preproc.macros.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} &quot;{source_file}&quot; -o &quot;{preprocessed_file_path}&quot;" tools.avrdude.path="{runtime.tools.avrdude.path}" tools.avrdude.cmd.path="{path}/bin/avrdude" tools.avrdude.config.path="{path}/etc/avrdude.conf" tools.avrdude.network_cmd="{runtime.tools.arduinoOTA.path}/bin/arduinoOTA" tools.avrdude.upload.params.verbose="-v" tools.avrdude.upload.params.quiet="-q -q" tools.avrdude.upload.verify="" tools.avrdude.upload.params.noverify="-V" tools.avrdude.upload.pattern="&quot;{cmd.path}&quot; &quot;-C{config.path}&quot; {upload.verbose} {upload.verify} -p{build.mcu} -c{upload.protocol} &quot;-P{serial.port}&quot; -b{upload.speed} -D &quot;-Uflash:w:{build.path}/{build.project_name}.hex:i&quot;" tools.avrdude.program.params.verbose="-v" tools.avrdude.program.params.quiet="-q -q" tools.avrdude.program.verify="" tools.avrdude.program.params.noverify="-V" tools.avrdude.program.pattern="&quot;{cmd.path}&quot; &quot;-C{config.path}&quot; {program.verbose} {program.verify} -p{build.mcu} -c{protocol} {program.extra_params} &quot;-Uflash:w:{build.path}/{build.project_name}.hex:i&quot;" tools.avrdude.erase.params.verbose="-v" tools.avrdude.erase.params.quiet="-q -q" tools.avrdude.erase.pattern="&quot;{cmd.path}&quot; &quot;-C{config.path}&quot; {erase.verbose} -p{build.mcu} -c{protocol} {program.extra_params} -e -Ulock:w:{bootloader.unlock_bits}:m -Uefuse:w:{bootloader.extended_fuses}:m -Uhfuse:w:{bootloader.high_fuses}:m -Ulfuse:w:{bootloader.low_fuses}:m" tools.avrdude.bootloader.params.verbose="-v" tools.avrdude.bootloader.params.quiet="-q -q" tools.avrdude.bootloader.pattern="&quot;{cmd.path}&quot; &quot;-C{config.path}&quot; {bootloader.verbose} -p{build.mcu} -c{protocol} {program.extra_params} &quot;-Uflash:w:{runtime.platform.path}/bootloaders/{bootloader.file}:i&quot; -Ulock:w:{bootloader.lock_bits}:m" tools.avrdude_remote.upload.pattern="/usr/bin/run-avrdude /tmp/sketch.hex {upload.verbose} -p{build.mcu}" tools.avrdude.upload.network_pattern="&quot;{network_cmd}&quot; -address {serial.port} -port {upload.network.port} -sketch &quot;{build.path}/{build.project_name}.hex&quot; -upload {upload.network.endpoint_upload} -sync {upload.network.endpoint_sync} -reset {upload.network.endpoint_reset} -sync_exp {upload.network.sync_return}" build.usb_manufacturer="&quot;Unknown&quot;" build.usb_flags="-DUSB_VID={build.vid} -DUSB_PID={build.pid} '-DUSB_MANUFACTURER={build.usb_manufacturer}' '-DUSB_PRODUCT={build.usb_product}'" vm.platform.root.path="E:\visualstudio\Common7\IDE\Extensions\kuedxvg2.nmj\Micro Platforms\arduino16x" avrisp.name="AVR ISP" avrisp.communication="serial" avrisp.protocol="stk500v1" avrisp.program.protocol="stk500v1" avrisp.program.tool="avrdude" avrisp.program.extra_params="-P{serial.port}" avrispmkii.name="AVRISP mkII" avrispmkii.communication="usb" avrispmkii.protocol="stk500v2" avrispmkii.program.protocol="stk500v2" avrispmkii.program.tool="avrdude" avrispmkii.program.extra_params="-Pusb" usbtinyisp.name="USBtinyISP" usbtinyisp.protocol="usbtiny" usbtinyisp.program.tool="avrdude" usbtinyisp.program.extra_params="" arduinoisp.name="ArduinoISP" arduinoisp.protocol="arduinoisp" arduinoisp.program.tool="avrdude" arduinoisp.program.extra_params="" arduinoisporg.name="ArduinoISP.org" arduinoisporg.protocol="arduinoisporg" arduinoisporg.program.tool="avrdude" arduinoisporg.program.extra_params="" usbasp.name="USBasp" usbasp.communication="usb" usbasp.protocol="usbasp" usbasp.program.protocol="usbasp" usbasp.program.tool="avrdude" usbasp.program.extra_params="-Pusb" parallel.name="Parallel Programmer" parallel.protocol="dapa" parallel.force="true" parallel.program.tool="avrdude" parallel.program.extra_params="-F" arduinoasisp.name="Arduino as ISP" arduinoasisp.communication="serial" arduinoasisp.protocol="stk500v1" arduinoasisp.speed="19200" arduinoasisp.program.protocol="stk500v1" arduinoasisp.program.speed="19200" arduinoasisp.program.tool="avrdude" arduinoasisp.program.extra_params="-P{serial.port} -b{program.speed}" usbGemma.name="Arduino Gemma" usbGemma.protocol="arduinogemma" usbGemma.program.tool="avrdude" usbGemma.program.extra_params="" usbGemma.config.path="{runtime.platform.path}/bootloaders/gemma/avrdude.conf" buspirate.name="BusPirate as ISP" buspirate.communication="serial" buspirate.protocol="buspirate" buspirate.program.protocol="buspirate" buspirate.program.tool="avrdude" buspirate.program.extra_params="-P{serial.port}" stk500.name="Atmel STK500 development board" stk500.communication="serial" stk500.protocol="stk500" stk500.program.protocol="stk500" stk500.program.tool="avrdude" stk500.program.extra_params="-P{serial.port}" jtag3isp.name="Atmel JTAGICE3 (ISP mode)" jtag3isp.communication="usb" jtag3isp.protocol="jtag3isp" jtag3isp.program.protocol="jtag3isp" jtag3isp.program.tool="avrdude" jtag3isp.program.extra_params="" jtag3.name="Atmel JTAGICE3 (JTAG mode)" jtag3.communication="usb" jtag3.protocol="jtag3" jtag3.program.protocol="jtag3" jtag3.program.tool="avrdude" jtag3.program.extra_params="-B0.1" atmel_ice.name="Atmel-ICE (AVR)" atmel_ice.communication="usb" atmel_ice.protocol="atmelice_isp" atmel_ice.program.protocol="atmelice_isp" atmel_ice.program.tool="avrdude" atmel_ice.program.extra_params="-Pusb" runtime.tools.avr-gcc.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.avr-gcc-4.9.2-atmel3.5.4-arduino2.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.tools-avr.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.avrdude.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.avrdude-6.3.0-arduino9.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.arduinoOTA.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.tools.arduinoOTA-1.1.1.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" runtime.vm.boardinfo.id="uno" runtime.vm.boardinfo.name="uno" runtime.vm.boardinfo.desc="Arduino/Genuino Uno" runtime.vm.boardinfo.src_location="C:\Program Files (x86)\Arduino\hardware\arduino\avr" ide.hint="Use installed IDE. Provides built-in hardware, reference/help and libraries." ide.location.key="Arduino16x" ide.location.ide.winreg="Arduino 1.6.x Application" ide.location.sketchbook.winreg="Arduino 1.6.x Sketchbook" ide.location.sketchbook.preferences="sketchbook.path" ide.default.revision_name="1.9.0" ide.default.version="10800" ide.default.package="arduino" ide.default.platform="avr" ide.multiplatform="true" ide.includes="Arduino.h" ide.exe_name="arduino" ide.platformswithoutpackage="false" ide.includes.fallback="wprogram.h" ide.extension="ino" ide.extension.fallback="pde" ide.versionGTEQ="160" ide.exe="arduino.exe" ide.builder.exe="arduinobuilder.exe" ide.builder.name="Arduino Builder" ide.hosts="atmel" ide.url="http://arduino.cc/en/Main/Software" ide.help.reference.path="reference" ide.help.reference.path2="reference\www.arduino.cc\en\Reference" ide.help.reference.serial="reference\www.arduino.cc\en\Serial" ide.location.preferences.portable="{runtime.ide.path}\portable" ide.location.preferences.arduinoData="{runtime.sketchbook.path}\ArduinoData" ide.location.preferences="%VM_APPDATA_LOCAL%\arduino15\preferences.txt" ide.location.preferences_fallback="%VM_APPDATA_ROAMING%\arduino15\preferences.txt" ide.location.contributions="%VM_APPDATA_LOCAL%\arduino15" ide.location.contributions_fallback="%VM_APPDATA_ROAMING%\arduino15" ide.contributions.boards.allow="true" ide.contributions.boards.ignore_unless_rewrite_found="true" ide.contributions.libraries.allow="true" ide.contributions.boards.support.urls.wiki="https://github.com/arduino/Arduino/wiki/Unofficial-list-of-3rd-party-boards-support-urls" ide.create_platforms_from_boardsTXT.teensy="build.core" vm.debug="true" software="ARDUINO" ssh.user.name="root" ssh.user.default.password="arduino" ssh.host.wwwfiles.path="/www/sd" build.working_directory="{runtime.ide.path}\java\bin" ide.appid="arduino16x" location.sketchbook="C:\Users\Администратор\Documents\Arduino" build.core.vmresolved="C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino" build.core.parentfolder.vmresolved="C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores" build.core.coresparentfolder.vmresolved="C:\Program Files (x86)\Arduino\hardware\arduino\avr" build.core.path="C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino" vm.core.include="arduino.h" vm.boardsource.path="C:\Program Files (x86)\Arduino\hardware\arduino\avr" runtime.platform.path="C:\Program Files (x86)\Arduino\hardware\arduino\avr" vm.platformname.name="avr" build.arch="AVR" build.path="C:\Users\Администратор\AppData\Local\Temp\VMBuilds\crossbow\uno\Debug" build.project_name="crossbow.ino" build.project_path="E:\ЛОРА\QuadMeUp_Crossbow-master (3)\QuadMeUp_Crossbow-master\crossbow" sketch_path="E:\ЛОРА\QuadMeUp_Crossbow-master (3)\QuadMeUp_Crossbow-master\crossbow" ProjectDir="E:\ЛОРА\QuadMeUp_Crossbow-master (3)\QuadMeUp_Crossbow-master\crossbow\" builder.noino="false" build.architecture="avr" vmresolved.compiler.path="C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\" vmresolved.tools.path="C:\Program Files (x86)\Arduino\hardware\tools\avr" build.variant.vmresolved.name="standard" build.variant.vmresolved.full_path="C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\standard" vm.runtime.compiler.showwarnings="false" vm.runtime.upload.verbose="false" vm.runtime.upload.verify="false" serial.port.file="COM10" serial.port="COM10" serial.port.num="10" extra.time.local="1523540001" extra.time.utc="1523525601" extra.time.dst="14400" extra.time.zone="-14400" serial.port.caption="COM10 - USB-SERIAL CH340" serial.Caption="USB-SERIAL CH340 (COM10)" serial.ClassGuid="{4d36e978-e325-11ce-bfc1-08002be10318}" serial.CompatibleID.value0="USB\Class_FF" serial.ConfigManagerErrorCode="0" serial.ConfigManagerUserConfig="False" serial.CreationClassName="Win32_PnPEntity" serial.Description="USB-SERIAL CH340" serial.DeviceID="USB\VID_1A86&amp;PID_7523\6&amp;E3E7252&amp;0&amp;4" serial.HardwareID.value0="USB\VID_1A86&amp;PID_7523" serial.Manufacturer="wch.cn" serial.Name="USB-SERIAL CH340 (COM10)" serial.PNPDeviceID="USB\VID_1A86&amp;PID_7523\6&amp;E3E7252&amp;0&amp;4" serial.Service="CH341SER_A64" serial.Status="OK" serial.SystemCreationClassName="Win32_ComputerSystem" serial.SystemName="XTREME-4PT6ER8J" serial.vid="0x1A86" serial.pid="0x7523" serial.iserial="6&amp;E3E7252&amp;0&amp;4" serial.port.iserial="6&amp;E3E7252&amp;0&amp;4" vm.runtime.compiler.auto_discover_includes="true" vm.runtime.compiler.auto_discover_includes_cache="true" build.vm.build.vmdebug="1" build.vm.build.isgdb="0" build.vm.build.optimised="1" vm.last.buildpath="C:\Users\Администратор\AppData\Local\Temp\VMBuilds\crossbow\uno\Debug" />
+    </Platform>
+    <Debug EnableBreak="1" DebugMode="Full" DebugEnabled="1" InBreakLiveView="1" PerfStats="1" IsGdb="0" RemotePortSpeedWrittenToDebugSource="115200" />
+    <VCCodeModel>
+      <VCCodeMacros />
+    </VCCodeModel>
+    <BreakPoints>
+      <BreakPoint Index="1" Name="sbus.cpp, строка 119" Id="f78fb5a0-8352-4fc0-9af2-e40b3db20a0f" Enabled="1" Message="{_decoderErrorFrames}" MessageTextType="2" PreProcessedMessage="{0}" Condition="" ConditionType="1" CurrentHits="0" File="e:\лора\quadmeup_crossbow-master (3)\quadmeup_crossbow-master\crossbow\sbus.cpp" FileLine="119" FileColumn="1" FunctionName="sbusRead()" FunctionLineOffset="23" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='f78fb5a0-8352-4fc0-9af2-e40b3db20a0f'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>112	        buffer[buffer_index] = rx;
+113	        buffer_index++;
+114	
+115			if (buffer_index == 25) {
+116				buffer_index = 0;
+117				if (buffer[24] != SBUS_FRAME_FOOTER) {
+118					//incorrect end byte, out of sync
+--&gt;119					_decoderErrorFrames++;
+120					continue;
+121				}
+122				_goodFrames++;
+123	
+124				channels[0]  = ((buffer[1]    |buffer[2]&lt;&lt;8)                 &amp; 0x07FF);
+125				channels[1]  = ((buffer[2]&gt;&gt;3 |buffer[3]&lt;&lt;5)                 &amp; 0x07FF);
+126				channels[2]  = ((buffer[3]&gt;&gt;6 |buffer[4]&lt;&lt;2 |buffer[5]&lt;&lt;10)  &amp; 0x07FF);
+127				channels[3]  = ((buffer[5]&gt;&gt;1 |buffer[6]&lt;&lt;7)                 &amp; 0x07FF);
+128				channels[4]  = ((buffer[6]&gt;&gt;4 |buffer[7]&lt;&lt;4)                 &amp; 0x07FF);
+</Source>
+        <MessageVariables>
+          <MessageVariable Name="_decoderErrorFrames" Index="1" />
+        </MessageVariables>
+      </BreakPoint>
+      <BreakPoint Index="2" Name="crossbow.ino, строка 448" Id="4e9d306e-eec9-4cad-a60b-0ded4e3607bc" Enabled="1" Message="{qsp.canTransmit} {transmitPayload}" MessageTextType="2" PreProcessedMessage="{0} {1}" Condition="" ConditionType="1" CurrentHits="0" File="e:\лора\quadmeup_crossbow-master (3)\quadmeup_crossbow-master\crossbow\crossbow.ino" FileLine="448" FileColumn="1" FunctionName="loop(void)" FunctionLineOffset="156" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='4e9d306e-eec9-4cad-a60b-0ded4e3607bc'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>441	    if (qsp.lastFrameReceivedAt[QSP_FRAME_RC_DATA] + RX_FAILSAFE_DELAY &lt; currentMillis) {
+442	        qsp.deviceState = DEVICE_STATE_FAILSAFE;
+443	    } else {
+444	        qsp.deviceState = DEVICE_STATE_OK;
+445	    }
+446	
+447	#endif
+--&gt;448	
+449	    if (qsp.canTransmit &amp;&amp; transmitPayload)
+450	    {
+451			TX_LORA_SEND++;
+452	        uint8_t size;
+453	        LoRa.beginPacket();
+454	        //Prepare packet
+455	        qspEncodeFrame(&amp;qsp, tmpBuffer, &amp;size);
+456	        //Sent it to radio in one SPI transaction
+457	        LoRa.write(tmpBuffer, size);
+</Source>
+        <MessageVariables>
+          <MessageVariable Name="qsp.canTransmit" Index="1" />
+          <MessageVariable Name="transmitPayload" Index="2" />
+        </MessageVariables>
+      </BreakPoint>
+      <BreakPoint Index="3" Name="crossbow.ino, строка 451" Id="eff4dfec-ea39-4058-821c-53bddf3c04c6" Enabled="1" Message="{TX_LORA_SEND}" MessageTextType="2" PreProcessedMessage="{0}" Condition="" ConditionType="1" CurrentHits="0" File="e:\лора\quadmeup_crossbow-master (3)\quadmeup_crossbow-master\crossbow\crossbow.ino" FileLine="451" FileColumn="1" FunctionName="loop(void)" FunctionLineOffset="159" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='eff4dfec-ea39-4058-821c-53bddf3c04c6'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>444	        qsp.deviceState = DEVICE_STATE_OK;
+445	    }
+446	
+447	#endif
+448	
+449	    if (qsp.canTransmit &amp;&amp; transmitPayload)
+450	    {
+--&gt;451			TX_LORA_SEND++;
+452	        uint8_t size;
+453	        LoRa.beginPacket();
+454	        //Prepare packet
+455	        qspEncodeFrame(&amp;qsp, tmpBuffer, &amp;size);
+456	        //Sent it to radio in one SPI transaction
+457	        LoRa.write(tmpBuffer, size);
+458		
+459		
+460	        LoRa.endPacketAsync();
+</Source>
+        <MessageVariables>
+          <MessageVariable Name="TX_LORA_SEND" Index="1" />
+        </MessageVariables>
+      </BreakPoint>
+      <BreakPoint Index="4" Name="qsp.cpp, строка 240" Id="f8ea6693-e9f4-43f1-99dd-da707f4b6186" Enabled="1" Message="{qsp-&gt;payloadLength}" MessageTextType="2" PreProcessedMessage="{0}" Condition="" ConditionType="1" CurrentHits="0" File="e:\лора\quadmeup_crossbow-master (3)\quadmeup_crossbow-master\crossbow\qsp.cpp" FileLine="240" FileColumn="1" FunctionName="qspEncodeFrame(QspConfiguration_t *qsp, uint8_t buffer[], uint8_t *size)" FunctionLineOffset="13" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='f8ea6693-e9f4-43f1-99dd-da707f4b6186'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>233	    buffer[0] = CHANNEL_ID;
+234	
+235	    //Write frame type and length
+236	    uint8_t data = qsp-&gt;payloadLength &amp; 0x0f;
+237	    data |= (qsp-&gt;frameToSend &lt;&lt; 4) &amp; 0xf0;
+238	    qspComputeCrc(qsp, data);
+239	    buffer[1] = data;
+--&gt;240	
+241	    for (uint8_t i = 0; i &lt; qsp-&gt;payloadLength; i++)
+242	    {
+243	        qspComputeCrc(qsp, qsp-&gt;payload[i]);
+244	        buffer[i + 2] = qsp-&gt;payload[i];
+245	    }
+246	
+247	    buffer[qsp-&gt;payloadLength + 2] = qsp-&gt;crc;
+248	    *size = qsp-&gt;payloadLength + 3; //Total length of QSP frame
+249	}
+</Source>
+        <MessageVariables>
+          <MessageVariable Name="qsp-&gt;payloadLength" Index="1" />
+        </MessageVariables>
+      </BreakPoint>
+      <BreakPoint Index="5" Name="qsp.cpp, строка 8" Id="ba8636b9-e854-4a46-bb33-bc5a63b6298e" Enabled="1" Message="{temporaryPpmOutput[0]} {qsp-&gt;payload[2]}" MessageTextType="2" PreProcessedMessage="{0} {1}" Condition="" ConditionType="1" CurrentHits="0" File="e:\лора\quadmeup_crossbow-master (3)\quadmeup_crossbow-master\crossbow\qsp.cpp" FileLine="8" FileColumn="1" FunctionName="qspDecodeRcDataFrame(QspConfiguration_t *qsp, RxDeviceState_t *rxDeviceSate)" FunctionLineOffset="5" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='ba8636b9-e854-4a46-bb33-bc5a63b6298e'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>1	#include "Arduino.h"
+2	#include "variables.h"
+3	
+4	void qspDecodeRcDataFrame(QspConfiguration_t *qsp, RxDeviceState_t *rxDeviceSate) {
+5	    int temporaryPpmOutput[PPM_OUTPUT_CHANNEL_COUNT] = {0};
+6	    //TODO fix it, baby :)
+7	
+--&gt;8	    temporaryPpmOutput[0] = (uint16_t) (((uint16_t) qsp-&gt;payload[0] &lt;&lt; 2) &amp; 0x3fc) | ((qsp-&gt;payload[1] &gt;&gt; 6) &amp; 0x03);
+9	    temporaryPpmOutput[1] = (uint16_t) (((uint16_t) qsp-&gt;payload[1] &lt;&lt; 4) &amp; 0x3f0) | ((qsp-&gt;payload[2] &gt;&gt; 4) &amp; 0x0F);
+10	    temporaryPpmOutput[2] = (uint16_t) (((uint16_t) qsp-&gt;payload[2] &lt;&lt; 6) &amp; 0x3c0) | ((qsp-&gt;payload[3] &gt;&gt; 2) &amp; 0x3F);
+11	    temporaryPpmOutput[3] = (uint16_t) (((uint16_t) qsp-&gt;payload[3] &lt;&lt; 8) &amp; 0x300) | ((qsp-&gt;payload[4]) &amp; 0xFF);
+12	    temporaryPpmOutput[4] = qsp-&gt;payload[5];
+13	    temporaryPpmOutput[5] = qsp-&gt;payload[6];
+14	    temporaryPpmOutput[6] = (qsp-&gt;payload[7] &gt;&gt; 4) &amp; 0b00001111;
+15	    temporaryPpmOutput[7] = qsp-&gt;payload[7] &amp; 0b00001111;
+16	    temporaryPpmOutput[8] = (qsp-&gt;payload[8] &gt;&gt; 4) &amp; 0b00001111;
+17	    temporaryPpmOutput[9] = qsp-&gt;payload[8] &amp; 0b00001111;
+</Source>
+        <MessageVariables>
+          <MessageVariable Name="temporaryPpmOutput[0]" Index="1" />
+          <MessageVariable Name="qsp-&gt;payload[2]" Index="2" />
+        </MessageVariables>
+      </BreakPoint>
+      <BreakPoint Index="6" Name="qsp.cpp, строка 35" Id="d0b41497-db81-4be9-83d6-397f217e3b2e" Enabled="1" Message="{rxDeviceSate-&gt;channels[1]}" MessageTextType="2" PreProcessedMessage="{0}" Condition="" ConditionType="1" CurrentHits="0" File="e:\лора\quadmeup_crossbow-master (3)\quadmeup_crossbow-master\crossbow\qsp.cpp" FileLine="35" FileColumn="1" FunctionName="qspDecodeRcDataFrame(QspConfiguration_t *qsp, RxDeviceState_t *rxDeviceSate)" FunctionLineOffset="32" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='d0b41497-db81-4be9-83d6-397f217e3b2e'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>28	    temporaryPpmOutput[8] = temporaryPpmOutput[8] &lt;&lt; 6;
+29	    temporaryPpmOutput[9] = temporaryPpmOutput[9] &lt;&lt; 6;
+30	
+31	    /*
+32	     * Copy tremporary to real output and add missing 1000
+33	     */
+34	    for (uint8_t i = 0; i &lt; PPM_OUTPUT_CHANNEL_COUNT; i++) {
+--&gt;35	        rxDeviceSate-&gt;channels[i] = temporaryPpmOutput[i] + 1000;
+36	    }
+37	}
+38	
+39	uint8_t get10bitHighShift(uint8_t channel) {
+40	    return ((channel % 4) * 2) + 2;
+41	}
+42	
+43	uint8_t get10bitLowShift(uint8_t channel) {
+44	    return 8 - get10bitHighShift(channel);
+</Source>
+        <MessageVariables>
+          <MessageVariable Name="rxDeviceSate-&gt;channels[1]" Index="1" />
+        </MessageVariables>
+      </BreakPoint>
+      <BreakPoint Index="7" Name="crossbow.ino, строка 88" Id="41f5cc4a-76d5-46ed-91f0-c8af4d795f7d" Enabled="1" Message="{qsp-&gt;lastFrameReceivedAt[qsp-&gt;frameId]}" MessageTextType="2" PreProcessedMessage="{0}" Condition="" ConditionType="1" CurrentHits="0" File="e:\лора\quadmeup_crossbow-master (3)\quadmeup_crossbow-master\crossbow\crossbow.ino" FileLine="88" FileColumn="1" FunctionName="onQspSuccess(QspConfiguration_t *qsp, TxDeviceState_t *txDeviceState, RxDeviceState_t *rxDeviceState, volatile RadioState_t *radioState)" FunctionLineOffset="7" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='41f5cc4a-76d5-46ed-91f0-c8af4d795f7d'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>81	
+82	void onQspSuccess(QspConfiguration_t *qsp, TxDeviceState_t *txDeviceState, RxDeviceState_t *rxDeviceState, volatile RadioState_t *radioState) {
+83	    //If devide received a valid frame, that means it can start to talk
+84	    qsp-&gt;canTransmit = true;
+85	
+86	    //Store the last timestamp when frame was received
+87	    if (qsp-&gt;frameId &lt; QSP_FRAME_COUNT) {
+--&gt;88	        qsp-&gt;lastFrameReceivedAt[qsp-&gt;frameId] = millis();
+89	    }
+90	    qsp-&gt;anyFrameRecivedAt = millis();
+91	    switch (qsp-&gt;frameId) {
+92	        case QSP_FRAME_RC_DATA:
+93	            qspDecodeRcDataFrame(qsp, rxDeviceState);
+94	            break;
+95	
+96	        case QSP_FRAME_RX_HEALTH:
+97	            decodeRxHealthPayload(qsp, rxDeviceState);
+</Source>
+        <MessageVariables>
+          <MessageVariable Name="qsp-&gt;lastFrameReceivedAt[qsp-&gt;frameId]" Index="1" />
+        </MessageVariables>
+      </BreakPoint>
+      <BreakPoint Index="8" Name="crossbow.ino, строка 110" Id="ee2a22b4-0449-4a8b-9ab9-6ae213852946" Enabled="1" Message="{txDeviceState-&gt;roundtrip}" MessageTextType="2" PreProcessedMessage="{0}" Condition="" ConditionType="1" CurrentHits="0" File="e:\лора\quadmeup_crossbow-master (3)\quadmeup_crossbow-master\crossbow\crossbow.ino" FileLine="110" FileColumn="1" FunctionName="onQspSuccess(QspConfiguration_t *qsp, TxDeviceState_t *txDeviceState, RxDeviceState_t *rxDeviceState, volatile RadioState_t *radioState)" FunctionLineOffset="29" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='ee2a22b4-0449-4a8b-9ab9-6ae213852946'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>103	
+104	        case QSP_FRAME_PONG:
+105	            txDeviceState-&gt;roundtrip = qsp-&gt;payload[0];
+106	            txDeviceState-&gt;roundtrip += (uint32_t) qsp-&gt;payload[1] &lt;&lt; 8;
+107	            txDeviceState-&gt;roundtrip += (uint32_t) qsp-&gt;payload[2] &lt;&lt; 16;
+108	            txDeviceState-&gt;roundtrip += (uint32_t) qsp-&gt;payload[3] &lt;&lt; 24;
+109	
+--&gt;110	            txDeviceState-&gt;roundtrip = (micros() - txDeviceState-&gt;roundtrip) / 1000;
+111	            break;
+112	
+113	        default:
+114	            //Unknown frame
+115	            //TODO do something in this case
+116	            break;
+117	    }
+118	
+119	    qsp-&gt;transmitWindowOpen = true;
+</Source>
+        <MessageVariables>
+          <MessageVariable Name="txDeviceState-&gt;roundtrip" Index="1" />
+        </MessageVariables>
+      </BreakPoint>
+      <BreakPoint Index="9" Name="crossbow.ino, строка 395" Id="5ef9b29f-8c4e-4a1b-939c-12e76b801c44" Enabled="1" Message="{output}" MessageTextType="2" PreProcessedMessage="{0}" Condition="" ConditionType="1" CurrentHits="0" File="e:\лора\quadmeup_crossbow-master (3)\quadmeup_crossbow-master\crossbow\crossbow.ino" FileLine="395" FileColumn="1" FunctionName="loop(void)" FunctionLineOffset="103" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='5ef9b29f-8c4e-4a1b-939c-12e76b801c44'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>388	    /*
+389	     * This routine updates RX device state and updates one of radio channels with RSSI value
+390	     */
+391	    if (lastRxStateTaskTime + RX_TASK_HEALTH &lt; currentMillis) {
+392	        lastRxStateTaskTime = currentMillis;
+393	        updateRxDeviceState(&amp;rxDeviceState);
+394	
+--&gt;395	        uint8_t output = constrain(radioState.rssi - 40, 0, 100);
+396	
+397	        rxDeviceState.channels[RSSI_CHANNEL - 1] = (output * 10) + 1000;
+398	        if (qsp.deviceState == DEVICE_STATE_FAILSAFE) {
+399	            digitalWrite(LED_BUILTIN, HIGH);
+400	        } else {
+401	            digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
+402	        }
+403	    }
+404	
+</Source>
+        <MessageVariables>
+          <MessageVariable Name="output" Index="1" />
+        </MessageVariables>
+      </BreakPoint>
+      <BreakPoint Index="10" Name="crossbow.ino, строка 397" Id="ff2d6704-1475-4014-9eaa-012aea61ce1e" Enabled="1" Message="{qsp.transmitWindowOpen} {qsp.protocolState}" MessageTextType="2" PreProcessedMessage="{0} {1}" Condition="" ConditionType="1" CurrentHits="0" File="e:\лора\quadmeup_crossbow-master (3)\quadmeup_crossbow-master\crossbow\crossbow.ino" FileLine="397" FileColumn="1" FunctionName="loop(void)" FunctionLineOffset="105" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='ff2d6704-1475-4014-9eaa-012aea61ce1e'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>390	     */
+391	    if (lastRxStateTaskTime + RX_TASK_HEALTH &lt; currentMillis) {
+392	        lastRxStateTaskTime = currentMillis;
+393	        updateRxDeviceState(&amp;rxDeviceState);
+394	
+395	        uint8_t output = constrain(radioState.rssi - 40, 0, 100);
+396	
+--&gt;397	        rxDeviceState.channels[RSSI_CHANNEL - 1] = (output * 10) + 1000;
+398	        if (qsp.deviceState == DEVICE_STATE_FAILSAFE) {
+399	            digitalWrite(LED_BUILTIN, HIGH);
+400	        } else {
+401	            digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
+402	        }
+403	    }
+404	
+405	    /*
+406	     * Main routine to answer to TX module
+</Source>
+        <MessageVariables>
+          <MessageVariable Name="qsp.transmitWindowOpen" Index="1" />
+          <MessageVariable Name="qsp.protocolState" Index="2" />
+        </MessageVariables>
+      </BreakPoint>
+      <BreakPoint Index="11" Name="crossbow.ino, строка 365" Id="b9338a14-4b56-4bc6-89dd-63c3d79f7910" Enabled="1" Message="{qsp.frameToSend}" MessageTextType="2" PreProcessedMessage="{0}" Condition="" ConditionType="1" CurrentHits="0" File="e:\лора\quadmeup_crossbow-master (3)\quadmeup_crossbow-master\crossbow\crossbow.ino" FileLine="365" FileColumn="1" FunctionName="loop(void)" FunctionLineOffset="73" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='b9338a14-4b56-4bc6-89dd-63c3d79f7910'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>358	        if (frameToSend == QSP_FRAME_RC_DATA &amp;&amp; !txInput.isReceiving()) {
+359	            frameToSend = -1;
+360	        }
+361	    #endif
+362	
+363	        if (frameToSend &gt; -1) {
+364	
+--&gt;365	            qsp.frameToSend = frameToSend;
+366	            qspClearPayload(&amp;qsp);
+367	
+368	            switch (qsp.frameToSend) {
+369	                case QSP_FRAME_PING:
+370	                    encodePingPayload(&amp;qsp, micros());
+371	                    break;
+372	
+373	                case QSP_FRAME_RC_DATA:
+374	                    encodeRcDataPayload(&amp;qsp, txInput.channels, PPM_INPUT_CHANNEL_COUNT);
+</Source>
+        <MessageVariables>
+          <MessageVariable Name="qsp.frameToSend" Index="1" />
+        </MessageVariables>
+      </BreakPoint>
+      <BreakPoint Index="12" Name="crossbow.ino, строка 413" Id="5e51f92c-63d7-499b-b79c-9e9ac748203f" Enabled="1" Message="{qsp.frameToSend}" MessageTextType="2" PreProcessedMessage="{0}" Condition="" ConditionType="1" CurrentHits="0" File="e:\лора\quadmeup_crossbow-master (3)\quadmeup_crossbow-master\crossbow\crossbow.ino" FileLine="413" FileColumn="1" FunctionName="loop(void)" FunctionLineOffset="121" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='5e51f92c-63d7-499b-b79c-9e9ac748203f'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>406	     * Main routine to answer to TX module
+407	     */
+408	    if (qsp.transmitWindowOpen &amp;&amp; qsp.protocolState == QSP_STATE_IDLE) {
+409	        qsp.transmitWindowOpen = false;
+410	
+411	        int8_t frameToSend = getFrameToTransmit(&amp;qsp);
+412	        if (frameToSend &gt; -1) {
+--&gt;413	            qsp.frameToSend = frameToSend;
+414	
+415	            if (frameToSend != QSP_FRAME_PONG) {
+416	                qspClearPayload(&amp;qsp);
+417	            }
+418	            switch (qsp.frameToSend) {
+419	                case QSP_FRAME_PONG:
+420	                    /*
+421	                     * Pong frame just responses with received payload
+422	                     */
+</Source>
+        <MessageVariables>
+          <MessageVariable Name="qsp.frameToSend" Index="1" />
+        </MessageVariables>
+      </BreakPoint>
+      <BreakPoint Index="13" Name="crossbow.ino, строка 407" Id="c9211cd7-66c8-4468-a0c5-a3f385765eb5" Enabled="1" Message="{qsp.transmitWindowOpen}" MessageTextType="2" PreProcessedMessage="{0}" Condition="" ConditionType="1" CurrentHits="0" File="e:\лора\quadmeup_crossbow-master (3)\quadmeup_crossbow-master\crossbow\crossbow.ino" FileLine="407" FileColumn="1" FunctionName="loop(void)" FunctionLineOffset="115" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='c9211cd7-66c8-4468-a0c5-a3f385765eb5'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>400	        } else {
+401	            digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
+402	        }
+403	    }
+404	
+405	    /*
+406	     * Main routine to answer to TX module
+--&gt;407	     */
+408	    if (qsp.transmitWindowOpen &amp;&amp; qsp.protocolState == QSP_STATE_IDLE) {
+409	        qsp.transmitWindowOpen = false;
+410	
+411	        int8_t frameToSend = getFrameToTransmit(&amp;qsp);
+412	        if (frameToSend &gt; -1) {
+413	            qsp.frameToSend = frameToSend;
+414	
+415	            if (frameToSend != QSP_FRAME_PONG) {
+416	                qspClearPayload(&amp;qsp);
+</Source>
+        <MessageVariables>
+          <MessageVariable Name="qsp.transmitWindowOpen" Index="1" />
+        </MessageVariables>
+      </BreakPoint>
+      <BreakPoint Index="14" Name="crossbow.ino, строка 84" Id="bb98f6bd-e4b8-4f66-aab9-e03f3b83680f" Enabled="1" Message="{qsp-&gt;frameId} {qsp-&gt;canTransmit}" MessageTextType="2" PreProcessedMessage="{0} {1}" Condition="" ConditionType="1" CurrentHits="0" File="e:\лора\quadmeup_crossbow-master (3)\quadmeup_crossbow-master\crossbow\crossbow.ino" FileLine="84" FileColumn="1" FunctionName="onQspSuccess(QspConfiguration_t *qsp, TxDeviceState_t *txDeviceState, RxDeviceState_t *rxDeviceState, volatile RadioState_t *radioState)" FunctionLineOffset="3" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='bb98f6bd-e4b8-4f66-aab9-e03f3b83680f'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>77	uint8_t getRadioSnr(void)
+78	{
+79	    return (uint8_t) constrain(LoRa.packetSnr(), 0, 255);
+80	}
+81	
+82	void onQspSuccess(QspConfiguration_t *qsp, TxDeviceState_t *txDeviceState, RxDeviceState_t *rxDeviceState, volatile RadioState_t *radioState) {
+83	    //If devide received a valid frame, that means it can start to talk
+--&gt;84	    qsp-&gt;canTransmit = true;
+85	
+86	    //Store the last timestamp when frame was received
+87	    if (qsp-&gt;frameId &lt; QSP_FRAME_COUNT) {
+88	        qsp-&gt;lastFrameReceivedAt[qsp-&gt;frameId] = millis();
+89	    }
+90	    qsp-&gt;anyFrameRecivedAt = millis();
+91	    switch (qsp-&gt;frameId) {
+92	        case QSP_FRAME_RC_DATA:
+93	            qspDecodeRcDataFrame(qsp, rxDeviceState);
+</Source>
+        <MessageVariables>
+          <MessageVariable Name="qsp-&gt;frameId" Index="1" />
+          <MessageVariable Name="qsp-&gt;canTransmit" Index="2" />
+        </MessageVariables>
+      </BreakPoint>
+      <BreakPoint Index="15" Name="sbus.cpp, строка 122" Id="0b874705-6e4c-42e4-8bef-292becdf12ca" Enabled="1" Message="{_goodFrames}" MessageTextType="2" PreProcessedMessage="{0}" Condition="" ConditionType="1" CurrentHits="0" File="e:\лора\quadmeup_crossbow-master (3)\quadmeup_crossbow-master\crossbow\sbus.cpp" FileLine="122" FileColumn="1" FunctionName="sbusRead()" FunctionLineOffset="26" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='0b874705-6e4c-42e4-8bef-292becdf12ca'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>115			if (buffer_index == 25) {
+116				buffer_index = 0;
+117				if (buffer[24] != SBUS_FRAME_FOOTER) {
+118					//incorrect end byte, out of sync
+119					_decoderErrorFrames++;
+120					continue;
+121				}
+--&gt;122				_goodFrames++;
+123	
+124				channels[0]  = ((buffer[1]    |buffer[2]&lt;&lt;8)                 &amp; 0x07FF);
+125				channels[1]  = ((buffer[2]&gt;&gt;3 |buffer[3]&lt;&lt;5)                 &amp; 0x07FF);
+126				channels[2]  = ((buffer[3]&gt;&gt;6 |buffer[4]&lt;&lt;2 |buffer[5]&lt;&lt;10)  &amp; 0x07FF);
+127				channels[3]  = ((buffer[5]&gt;&gt;1 |buffer[6]&lt;&lt;7)                 &amp; 0x07FF);
+128				channels[4]  = ((buffer[6]&gt;&gt;4 |buffer[7]&lt;&lt;4)                 &amp; 0x07FF);
+129				channels[5]  = ((buffer[7]&gt;&gt;7 |buffer[8]&lt;&lt;1 |buffer[9]&lt;&lt;9)   &amp; 0x07FF);
+130				channels[6]  = ((buffer[9]&gt;&gt;2 |buffer[10]&lt;&lt;6)                &amp; 0x07FF);
+131				channels[7]  = ((buffer[10]&gt;&gt;5|buffer[11]&lt;&lt;3)                &amp; 0x07FF);
+</Source>
+        <MessageVariables>
+          <MessageVariable Name="_goodFrames" Index="1" />
+        </MessageVariables>
+      </BreakPoint>
+      <BreakPoint Index="16" Name="crossbow.ino, строка 296" Id="13524d1e-6b62-4455-8be2-80355f92546c" Enabled="1" Message="{ttt}" MessageTextType="2" PreProcessedMessage="{0}" Condition="" ConditionType="1" CurrentHits="0" File="e:\лора\quadmeup_crossbow-master (3)\quadmeup_crossbow-master\crossbow\crossbow.ino" FileLine="296" FileColumn="1" FunctionName="loop(void)" FunctionLineOffset="4" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='13524d1e-6b62-4455-8be2-80355f92546c'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>289	 * Main loop starts here!
+290	 *
+291	 */
+292	void loop(void)
+293	{
+294	
+295	    uint32_t currentMillis = millis();
+--&gt;296		ttt++;
+297	    /*
+298	     * Detect the moment when radio module stopped transmittig and put it
+299	     * back in to receive state
+300	     */
+301	    if (
+302	        currentMillis &gt; radioState.nextTxCheckMillis &amp;&amp;
+303	        radioState.deviceState == RADIO_STATE_TX &amp;&amp;
+304	        !LoRa.isTransmitting()
+305	    ) {
+</Source>
+        <MessageVariables>
+          <MessageVariable Name="ttt" Index="1" />
+        </MessageVariables>
+      </BreakPoint>
+      <BreakPoint Index="17" Name="crossbow.ino, строка 343" Id="bf104be7-e300-47d6-b2f8-8d2867e94fcd" Enabled="1" Message="{radioState.deviceState} {tx_input}" MessageTextType="2" PreProcessedMessage="{0} {1}" Condition="" ConditionType="1" CurrentHits="0" File="e:\лора\quadmeup_crossbow-master (3)\quadmeup_crossbow-master\crossbow\crossbow.ino" FileLine="343" FileColumn="1" FunctionName="loop(void)" FunctionLineOffset="51" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='bf104be7-e300-47d6-b2f8-8d2867e94fcd'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>336	        qsp.frameDecodingStartedAt + QSP_MAX_FRAME_DECODE_TIME &lt; currentMillis
+337	    ) {
+338	        qsp.protocolState = QSP_STATE_IDLE;
+339	    }
+340	
+341	#ifdef DEVICE_MODE_TX
+342	
+--&gt;343	  txInput.loop();
+344	
+345	    if (
+346	        radioState.deviceState == RADIO_STATE_RX &amp;&amp;
+347	        qsp.protocolState == QSP_STATE_IDLE &amp;&amp;
+348	        qsp.lastTxSlotTimestamp + TX_TRANSMIT_SLOT_RATE &lt; currentMillis
+349	    ) {
+350	
+351	        int8_t frameToSend = getFrameToTransmit(&amp;qsp);
+352	
+</Source>
+        <MessageVariables>
+          <MessageVariable Name="radioState.deviceState" Index="1" />
+          <MessageVariable Name="tx_input" Index="2" />
+        </MessageVariables>
+      </BreakPoint>
+    </BreakPoints>
+  </Program>
+</VisualMicro>
